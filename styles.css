@@ -1,0 +1,22 @@
+/* design tokens */
+:root {
+  primary-bg: white;
+  primary-txt: black;
+  secondary-bg: black;
+  secondary-txt: white;
+  accent: #d4966a;
+}
+
+body {
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 300;
+}
