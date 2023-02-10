@@ -1,10 +1,10 @@
 /* design tokens */
 :root {
-  primary-bg: white;
-  primary-txt: black;
-  secondary-bg: black;
-  secondary-txt: white;
-  accent: #d4966a;
+  --primary-bg: white;
+  --primary-txt: black;
+  --secondary-bg: black;
+  --secondary-txt: white;
+  --accent: #d4966a;
 }
 
 * {
@@ -26,7 +26,10 @@ h2 {
 
 p {
   font-weight: 300;
+  line-height: 1.75;
 }
+
+/* hero */
 
 .hero {
   height: 70vh;
@@ -41,23 +44,45 @@ p {
   position: absolute;
   width: 25vw;
   height: inherit;
-  background: black;
+  background: var(--secondary-bg);
   z-index: -1;
 }
 
 .hero-content {
   display: flex;
   height: inherit;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-around;
+  padding-top: 10vh;
   gap: 10vw;
 }
 
 .title.lg {
   font-size: 4rem;
-  color: white;
+  color: var(--secondary-txt);
+  mix-blend-mode: difference;
 }
 
 .intro {
   width: 40ch;
+}
+
+.cta {
+  background: var(--secondary-bg);
+  color: var(--secondary-txt);
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 2rem;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.cta::after {
+  content: "";
+  background: var(--accent);
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  height: 2rem;
+  width: 2rem;
 }
