@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Art Gallery</title>
+    <title>Our Location</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,54 +14,38 @@
     />
   </head>
   <body>
-    <header class="hero">
-      <div class="hero-content">
-        <h1 class="title lg">
-          Modern <br />
-          Art Gallery
-        </h1>
-        <section class="intro">
-          <p>
-            The arts in the collection of the Modern Art Gallery began with a
-            spark of inspiration. Will these pieces inspire you too? Visit us
-            and find out.
-          </p>
-          <button class="cta"><a href="./location.html">Location</a></button>
-        </section>
-      </div>
+    <header>
+      <button class="back-btn"><a href="./index.html">Back</a></button>
     </header>
+    <main>
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.059197632931!2d-71.3103603!3d41.4813163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e5af5d9ad9f351%3A0x9bf38f9aed123934!2s99%20King%20St%2C%20Newport%2C%20RI%2002840%2C%20USA!5e0!3m2!1sen!2sca!4v1676082681142!5m2!1sen!2sca"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <section class="location-info">
+        <h1>Our Location</h1>
 
-    <main class="grid">
-      <section class="text-block light" id="one">
-        <header>
-          <h2>Your Day at the Gallery</h2>
-        </header>
-        <p>
-          Wander through our district collections and find new insights about
-          our artists. Dive into the details of their creative process.
-        </p>
-      </section>
-      <section class="img-block" id="two">
-        <img src="images/pexels-julio-nery-1839919.jpg" alt="" />
-      </section>
-      <section class="img-block" id="three">
-        <img src="images/pexels-sevenstorm-juhaszimrus-1604991.jpg" alt="" />
-      </section>
-      <section class="img-block" id="four">
-        <img src="images/pexels-berk-ozdemir-3779814.jpg" alt="" />
-      </section>
-
-      <section class="text-block dark" id="five">
-        <header>
-          <h2>Come & Be Inspired</h2>
-        </header>
-        <p>
-          We're excited to welcome you to our gallery and see how our
-          collections influence you.
-        </p>
+        <div>
+          <address>
+            <h2><span class="accent-text">99 King Street</span></h2>
+            <p>Newport</p>
+            <p>RI 02840</p>
+            <p>United States of America</p>
+          </address>
+          <p>
+            Our newly opened gallery is located near the Edward King House on 99
+            King Street, the Modern Art Gallery is free to all visitors and open
+            seven days a week from 8am to 9pm.
+          </p>
+        </div>
       </section>
     </main>
-    <footer class="footer main">
+    <footer class="footer location">
       <h2 class="title sm">Modern Art Gallery</h2>
       <p class="address">
         The Modern Art Gallery is free to all visitors and open seven days a
@@ -115,5 +99,6 @@
         </li>
       </ul>
     </footer>
+    <script src="scripts.js"></script>
   </body>
 </html>
