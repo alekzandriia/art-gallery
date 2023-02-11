@@ -78,6 +78,9 @@ img {
 
 .intro {
   width: 40ch;
+  background: #ffffff90;
+  backdrop-filter: blur(2px);
+  padding: 1rem;
 }
 
 .cta {
@@ -193,6 +196,9 @@ img {
 }
 
 @media only screen and (max-width: 750px) {
+  .title.lg {
+    font-size: 3rem;
+  }
   .grid,
   .footer {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
