@@ -40,6 +40,7 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  cursor: crosshair;
 }
 
 /* hero */
@@ -84,47 +85,50 @@ img {
   color: var(--secondary-txt);
   text-transform: uppercase;
   cursor: pointer;
-  height: 2rem;
   position: relative;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  margin: 1rem;
 }
 
 .cta::after {
-  content: "";
+  content: ">>";
   background: var(--accent);
   position: absolute;
   top: 0;
   right: -2rem;
-  height: 2rem;
-  width: 2rem;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* main */
 .grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: auto 1fr 1fr;
   gap: 1rem;
-  margin: 10vw;
+  margin: 5vw;
 }
 
 #one {
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 2;
 }
 
 #two {
-  grid-column: 4 / span 3;
-  background: yellow;
+  grid-column: 3 / span 4;
 }
 
 #three {
   grid-column: 1 / span 4;
   grid-row: 2 / span 2;
-  background: green;
 }
 
 #four {
-  background: blue;
   grid-column: 5 / span 2;
 }
 
@@ -156,6 +160,7 @@ img {
   gap: 2rem;
   align-items: center;
   justify-items: center;
+  padding: 1rem;
 }
 
 .title.sm {
@@ -172,4 +177,13 @@ img {
   display: flex;
   gap: 1rem;
   list-style: none;
+}
+
+.icon {
+  fill: var(--secondary-txt);
+  transition: transform 200ms ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
