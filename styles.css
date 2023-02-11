@@ -199,6 +199,9 @@ img {
   .title.lg {
     font-size: 3rem;
   }
+  .hero {
+    background-position: 0;
+  }
   .grid,
   .footer {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
