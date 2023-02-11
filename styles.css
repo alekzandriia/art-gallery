@@ -11,7 +11,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid magenta;
 }
 
 body {
@@ -145,4 +144,32 @@ img {
 .text-block.dark {
   background: var(--secondary-bg);
   color: var(--secondary-txt);
+}
+
+/* footer */
+.footer {
+  background: var(--secondary-bg);
+  color: var(--secondary-txt);
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.title.sm {
+  font-size: 1.5rem;
+  text-align: end;
+}
+
+.address {
+  width: 45ch;
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
 }
